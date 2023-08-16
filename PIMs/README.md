@@ -1,4 +1,4 @@
-# READ ME
+# PIMs
 ## Description
 (TBD)
 ## Citation

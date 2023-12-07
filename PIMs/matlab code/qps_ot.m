@@ -265,12 +265,12 @@ end
 if isLP
     if matlab
         % modified by JP Chan on March 31.2023
-        ot_opt.Algorithm = 'interior-point'; 
+        ot_opt.Algorithm = 'dual-simplex'; 
         [x, f, eflag, output, lam] = ...
             linprog(c, Ai, bi, Ae, be, xmin, xmax, x0, ot_opt);
 
         if eflag ~= 1
-            ot_opt.Algorithm = 'dual-simplex';
+            ot_opt.Algorithm = 'interior-point';
             [x, f, eflag, output, lam] = ...
                 linprog(c, Ai, bi, Ae, be, xmin, xmax, x0, ot_opt);
         end

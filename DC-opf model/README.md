@@ -1,6 +1,6 @@
 # DC-opf model
 We modified the original 'qps_ot.m' file to use the built-in 'dual-simplex' algorithm as a fallback when the 'interior-point' algorithm fails to solve the linear optimization problem. 
-**PLEASE REPLACE THE 'qps_ot.m' FILE IN MATPOWER v7.1 WITH THE VERSION PROVIDED IN THIS FOLDER.**
+To achieve this, **WE REPLACE THE 'qps_ot.m' FILE IN MATPOWER v7.1 WITH THE VERSION PROVIDED IN THIS FOLDER.**
 Keep in mind that using different solvers may produce varying results.
 
 ## Precautions
